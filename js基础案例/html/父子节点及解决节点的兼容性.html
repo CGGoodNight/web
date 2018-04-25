@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id='box'>
+        <p>111</p>
+        <p>222</p>
+        <div>333</div>
+        <span>444</span>
+        <!-- 5555 -->
+    </div>
+    <script src="../js/common.js"></script>
+    <script>
+        //通过节点找到子元素
+        var box = document.getElementById('box');
+        console.log(box.childNodes); // 文本节点是div到p之间的换行和空格 注释也是一个节点为注释节点
+        console.log(box.children); //获取子节点中的元素节点
+
+        console.log(box.firstChild); //获取元素的子节点
+        //console.log(box.firstElementChild); //first(last)ElementChild只读属性，且IE9以后支持  兼容性差
+        var firstChild = getElementFirstChild(box);
+        console.log(firstChild);
+
+        console.log(box.lastChild);
+        var lastChild = getElementLastChild(box);
+        console.log(lastChild);
+    </script>
+</body>
+</html>

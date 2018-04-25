@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0px;
+	}
+	</style>
+</head>
+<body>
+	<div id="xc">
+		<a href="../image/timg.jpg">
+			<img src="../image/timg.jpg" width="150px">
+		</a>
+		<a href="../image/timg2.jpg">
+			<img src="../image/timg2.jpg" width="150px">
+		</a>
+		<a href="../image/timg3.jpg">
+			<img src="../image/timg3.jpg" width="150px">
+		</a>
+		<a href="../image/timg4.jpg">
+			<img src="../image/timg4.jpg" width="150px">
+		</a>
+	</div>
+	<div>
+		<img src="../image/timg.jpg" id="img">
+	</div>
+
+	<script type="text/javascript">
+		var xc = document.getElementById('xc');
+		var links = xc.getElementsByTagName('a');
+		console.log(links.length);
+		for (var i = 0; i < links.length; i++) {
+			var link = links[i];
+			console.log(link);
+
+			link.onclick = function() {
+				var img = document.getElementById('img');
+				img.src = this.href;
+				return false;
+			}
+		}
+	</script>
+</body>
+</html>

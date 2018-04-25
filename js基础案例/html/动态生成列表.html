@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+    </div>
+    <script src="../js/common.js"></script>
+    <script>
+        var data = [
+            {key: "电视机", qre: "14053"},
+            {key: "电视柜", qre: "795302"},
+            {key: "电视新品", qre: "11763"},
+            {key: "电视机55寸", qre: "86862"},
+            {key: "电视盒子", qre: "255808"},
+            {key: "电视机32寸", qre: "53731"},
+            {key: "电视机65寸", qre: "54306"},
+            {key: "电视机40寸", qre: "22395"},
+            {key: "电视挂架", qre: "49921"},
+            {key: "电视音响", qre: "17489"}
+        ];
+
+        var box = document.getElementById('box');
+        //创建一个孤立的DOM对象ul(没有在DOM结构上)
+        var ul = document.createElement('ul'); 
+        //将创建的ul追加到box节点里
+        box.appendChild(ul);
+
+        var i = 0;len = data.length;
+        for (;i < len;i++) {
+            var li = document.createElement('li');
+            ul.appendChild(li);
+            //设置li里面的内容
+            setInnerText(li,data[i].key);
+
+            li.onmouseover = function() {
+                this.style.backgroundColor = 'lightgray';
+            }
+            li.onmouseout = function() {
+                this.style.backgroundColor = '';
+            }
+        }
+    </script>
+</body>
+</html>

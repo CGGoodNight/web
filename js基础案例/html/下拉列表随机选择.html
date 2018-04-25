@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	.main {
+		margin: 100px auto;
+		text-align: center;
+	}
+	input {
+		height: 50px;
+	}
+	select {
+		height: 50px;
+		width: 200px;
+		font-size: 18px;
+	}
+	</style>
+	<script type="text/javascript">
+		function getRandom(min,max) {
+			min = Math.ceil(min);
+			max = Math.floor(max);
+			return Math.floor(Math.random() * (max - min + 1)) + min;
+		}
+	</script>
+</head>
+<body>
+	<div class="main">
+		<select id='sel'>
+			<option>请选择你最喜欢的明星</option>
+			<option>张学友</option>
+			<option>刘德华</option>
+			<option>Beyond</option>
+			<option>MJ</option>
+			<option>AW</option>
+		</select>
+		<input type="button" id='btn' value="随机选择">
+	</div>
+	<script type="text/javascript">
+		var btn = document.getElementById('btn');
+		btn.onclick =function() {
+			var options = document.getElementsByTagName('option');
+			var i = getRandom(1,options.length - 1);
+			options[i].selected = true;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            #box table {
+                border: 1px solid #000;
+                border-collapse: collapse;
+                text-align: center;
+                width: 500px;
+            }
+            #box table td {
+                height: 40px;
+            }
+            #box thead td {
+                background-color: lightgray;
+            }
+            #box td {
+                border: 1px solid #000;
+            }
+            #box td a {
+                text-decoration: none;
+                color: #000;
+            }
+            #box td a:hover {
+                color: #f10215;
+            }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script src="../js/common.js"></script>
+    <script src="../js/table.js"></script>
+    <script>
+        console.time('flag');
+        //表头数据
+        var headData = ['姓名','年龄','学历','婚姻','操作'];
+        //表格数据
+        var bodyData = [ 
+            {
+            name: '小爱',age: '10',education: '本科', marriage: '单身'
+            },
+            {
+            name: '小美',age: '20',education: '本科', marriage: '已婚'
+            },
+            {
+            name: '小港',age: '21',education: '本科', marriage: '单身'
+            },
+            {
+            name: '小林',age: '33',education: '研究生', marriage: '单身'
+            }
+        ];
+        var box = document.getElementById('box');
+        creatTable(box,headData,bodyData);
+
+        console.timeEnd('flag');
+
+        //封装成一个单独的js里
+
+
+
+        //表格中的数据通过参数传过去
+        // function creatTable(parent, headData, bodyData) {
+        //     var table = creatHead(parent, headData);
+            
+        //     creatBody(table, bodyData);
+        // }
+
+        // function creatHead(parent, headData) {
+        //     //1.生成表头
+        //     var table = document.createElement('table');
+        //     parent.appendChild(table);
+            
+        //     var thead = document.createElement('thead');
+        //     table.appendChild(thead);
+
+        //     var tr = document.createElement('tr');
+        //     thead.appendChild(tr);
+
+        //     //遍历数组时创建td
+        //     var td;
+        //     headData.forEach(function(item) {
+        //         td = document.createElement('td');
+        //         tr.appendChild(td);
+        //         setInnerText(td,item);
+        //     });
+        //     return table;
+        // }
+
+        // function creatBody(table, bodyData) {
+        //     var tbody = document.createElement('tbody');
+        //     table.appendChild(tbody);
+
+        //     //遍历数组生成数据行和列
+        //     bodyData.forEach(function(item) {
+        //         var tr = document.createElement('tr');
+        //         tbody.appendChild(tr);
+        //         //for 循环实现创建td
+        //         for(var key in item) {
+        //             var td = document.createElement('td');
+        //             tr.appendChild(td);
+        //             setInnerText(td,item[key]);
+        //         }
+                
+        //         var td = document.createElement('td');
+        //         tr.appendChild(td);
+        //         var link = document.createElement('a');
+        //         td.appendChild(link);
+        //         setInnerText(link,'删除');
+        //         link.href = 'javascript: void(0)';
+
+
+        //         //创建事件实现点击删除删除某一行
+        //         link.onclick = linkClick;
+        //     })
+
+        //     function linkClick() {
+        //         var isDelete = confirm("你确定删除吗？");
+        //         if (isDelete) {
+        //             var tr = this.parentNode.parentNode;
+        //             tr.remove();
+        //         }
+
+        //     }
+        // }
+    </script>
+</body>
+</html>

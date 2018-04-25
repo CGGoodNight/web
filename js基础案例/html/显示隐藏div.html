@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div {
+        background-color: #f10215;
+        width: 150px;
+        height: 150px;
+        margin-top: 5px;
+    }
+
+    .display {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <input type="button" value=" 隐 藏 " id='btn'>
+    <div id='div'></div>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var doo = true;
+        btn.onclick = function() {
+            var div = document.getElementById('div');
+            
+            if (doo === true) {
+                div.className = 'hidden';
+                btn.value = ' 显 示 ';
+                doo = false;
+            } else {
+                div.className = 'display';
+                btn.value = ' 隐 藏 ';
+                doo = true;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <img src="../image/模拟DOM文档结构.png" alt="" width="500px">
+    <script>
+        function Node(options) {
+            //当不传参数是 options是underfined
+            
+            //设置默认值
+            options = options || {};  //参数自动转换为boolea类型 true返回本身 flase返回false，然后执行{} 
+            this.id = options.id || '';
+            this.className = options.className || '';
+            this.nodeName = options.nodeName || '';
+            this.nodeType = options.nodeType || 1;
+            this.value = options.value || null;
+
+            //记录子节点（兄弟节点，父节点 等等）
+            this.children = [];
+        }
+        
+        //创建html根节点
+        var html = new Node({
+            nodeName: 'HTML'
+        });
+        
+        //head节点
+        var head = new Node({
+            nodeName: 'HEAD'
+        })
+        html.children.push(head);
+
+        //body节点
+        var body = new Node({
+            nodeName: 'BODY'
+        })
+        html.children.push(body);
+        //div节点
+        var div = new Node({
+            id: 'box',
+            nodeName: 'DIV'
+        })
+        body.children.push(div);
+        //p节点
+        var p = new Node({
+            id: 'p',
+            nodeName: 'P'
+        })
+        body.children.push(p);  
+
+        console.dir(html);      
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="点击" id="btn">
+
+    <script src="../js/common.js"></script>
+    <script>
+        var btn = getId('btn');
+        // btn.onclick = function() {
+        //     alert("Hello");
+        //     this.onclick = null;   第一种方式 
+        // }
+        
+
+        addEventListener(btn, 'click', btnClick);  //不能在里面用匿名函数，否则后面移除事件不能执行
+        // function btnClick() {   //有兼容性问题 将在commom.js里面解决
+        //     alert('Hello');
+        //     this.removeEventListener('click', btnClick,false);
+        // }
+
+        function btnClick() {
+            alert('Hello');
+            removeEventListener(this, 'click', btnClick);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.highLight {
+			background-color: #f10215;
+		}
+	</style>
+</head>
+<body>
+	<div class='main'>
+		<p>输入3-8位用户名且密码6-8位 错误项会高亮</p>
+		<input type="text" name="txt" id='txt'><br>
+		<input type="password" name="pw" id='pw'><br>
+		<input type="submit" id='btnLogin' value=" 登 录 ">
+	</div>
+
+	<script type="text/javascript">
+		var btnLogin = document.getElementById('btnLogin');
+		btnLogin.onclick = function() {
+			var txt = document.getElementById('txt');
+			var pw = document.getElementById('pw');
+			if (txt.value.length < 3 || txt.value.length > 8) {
+				txt.className = 'highLight';
+				return false;
+			} else {
+				txt.className = '';
+			}
+
+			if (pw.value.length < 6 || pw.value.length > 8) {
+				pw.className = 'highLight';
+				return false;
+			} else {
+				pw.className = '';
+			}
+		}
+	</script>
+</body>
+</html>

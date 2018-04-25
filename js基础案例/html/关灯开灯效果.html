@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #sp video{
+            width: 50%;
+        }
+        #sp {
+            text-align: center;
+        }
+        .bg {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body id="bd">
+    <div>
+        <input type="button" value=" 关 灯 " id="btn">
+        <div id="sp">
+                <video src="" controls="controls"></video>
+        </div>
+      
+    </div>
+
+    <script>
+        var btn = document.getElementById('btn');
+        var isLight = true;
+        btn.onclick = function() {
+            var bd = document.getElementById('bd');
+            if(isLight === true) {
+                bd.className = 'bg';
+                btn.value = ' 开 灯 ';
+                isLight = false;
+            } else {
+                bd.className = '';
+                btn.value = ' 关 灯 ';
+                isLight = true;
+            }
+        }
+    </script>
+</body>
+</html>

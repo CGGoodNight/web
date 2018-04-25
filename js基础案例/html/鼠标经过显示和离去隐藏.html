@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src:  url('../fonts/icomoon.eot?n25xex');
+            src:  url('../fonts/icomoon.eot?n25xex#iefix') format('embedded-opentype'),
+                url('../fonts/icomoon.ttf?n25xex') format('truetype'),
+                url('../fonts/icomoon.woff?n25xex') format('woff'),
+                url('../fonts/icomoon.svg?n25xex#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+        i {
+            font-family: 'icomoon';
+            font-style: normal;
+            cursor: pointer;
+            font-size: 40px;
+        }
+        .masmall {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 40%;
+        }
+        .all {
+            position: relative;
+        }
+        .mabig {
+            position: absolute;
+            left: 36%;
+            top: 40px;
+        }
+        .show {
+            display: block;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="all">
+        <div class="masmall" id="masmall">
+            <i></i>
+        </div>
+        <div class="mabig hide" id="mabig">
+            <img src="../image/erweima.jpg" alt="" width="200px">
+        </div>
+    </div>
+
+    <script>
+
+        // 1.类样式
+        var masmall = document.getElementById('masmall');
+        masmall.onmouseover = function() {
+            var mabig = document.getElementById('mabig');
+            //mabig.className = 'show';  //1.1  导致div的类名只有show 此处必须通过两个类名才能实现效果
+            //mabig.className = 'mabig show'; //1.2 如果类名过多不方便 可使用replace()方法进行字符串的替换
+            mabig.className = mabig.className.replace('hide','show'); //将show改为hide
+        }
+
+         masmall.onmouseout = function() {
+            var mabig = document.getElementById('mabig');
+            
+            mabig.className = mabig.className.replace('show','hide');
+        }
+
+        // 2.style属性 //没有类样式复杂
+        // var masmall = document.getElementById('masmall');
+        // masmall.onmouseover = function() {
+        //     console.log(123);
+        //     var mabig = document.getElementById('mabig');
+        //     mabig.style.display = 'block';
+        // }
+        // masmall.onmouseout = function() {
+        //     var mabig = document.getElementById('mabig');
+        //     mabig.style.display = 'none';
+        // }
+    </script>
+
+</body>
+</html>

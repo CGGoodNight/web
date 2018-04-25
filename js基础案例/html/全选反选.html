@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	table, td, tr ,thead {
+		margin: 0;
+		padding: 0;
+		border-collapse: collapse;
+	}
+	.banxin {
+		width: 1200px;
+		margin: auto;
+		margin-top: 200px;
+		position: relative;
+	}
+	td{
+		border: 1px solid #000;
+		border-collapse: collapse;
+		text-align: center;
+	}
+	table {
+		position: absolute;
+		left: 50%;
+		margin-left: -180px;
+	}
+	.firstTd {
+		width: 60px;
+	}
+	td {
+		width: 150px;
+		height: 50px;
+	}
+	thead td {
+		background-color: skyblue;
+	}
+	.fanxuan {
+		width: 60px;
+		border: 0;
+	}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="banxin">
+			<table cellpadding="0" cellspacing="0">
+				<thead>
+					<td class="firstTd"><input type="checkbox" id='checkbox_All'>全选</td>
+					<td>手机品牌</td>
+					<td>售价</td>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="firstTd"><input type="checkbox" name=""></td>
+						<td>iphone X</td>
+						<td>8888</td>
+					</tr>
+
+					<tr>
+						<td class="firstTd"><input type="checkbox" name=""></td>
+						<td>Mi 7</td>
+						<td>3499</td>
+					</tr>
+
+					<tr>
+						<td class="firstTd"><input type="checkbox" name=""></td>
+						<td>Huawei P20</td>
+						<td>4299</td>
+					</tr>
+
+					<tr>
+						<td class="firstTd"><input type="checkbox" name=""></td>
+						<td>OPPO R11</td>
+						<td>4499</td>
+					</tr>
+
+					<tr>
+						<td class="fanxuan"><input type="button" value=" 反 选 " id='btn'></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<script src="../js/common.js"></script>
+	<script type="text/javascript">
+		var checkbox_All = getId('checkbox_All');
+		var checkboxs = document.querySelectorAll(' tbody .firstTd input[type=checkbox]');
+		//第一次将‘子checkb影响全选的checkbook’写在了里面导致后续第一次进入网页通过
+		//点击4个checkbook时全选的checkbook没有选中 而且实现反选时程序有BUG
+
+		// 已解决！
+		checkbox_All.onclick = function() {
+			for (var i = 0; i < checkboxs.length; i++) {
+				var checkbox = checkboxs[i];
+				checkbox.checked = this.checked;
+			}
+		}
+
+		for (var i = 0; i < checkboxs.length; i++) {   //子checkb影响全选的checkbook
+			var checkbox = checkboxs[i];	
+			checkbox.onclick = function() {
+				// var isCheckedAll = true;
+				// for (var i = 0; i < checkboxs.length; i++) {
+				// 	checkbox = checkboxs[i];
+				// 	if (!checkbox.checked) {
+				// 		isCheckedAll = false;
+				// 		break;
+				// 	}
+				// }
+				// checkbox_All.checked = isCheckedAll;
+				common();
+			}
+		}
+		
+		var btn = document.getElementById('btn');
+		btn.onclick = function() {
+			for (var i = 0; i < checkboxs.length; i++) {
+				var checkbox = checkboxs[i];
+				checkbox.checked = !checkbox.checked;
+			}
+			
+			common();
+		}
+
+		function common() {    // 多个重复使用的代码块可以用函数调用节约代码
+			var isCheckedAll = true;
+			for (var i = 0; i < checkboxs.length; i++) {
+				checkbox = checkboxs[i];
+				if (!checkbox.checked) {
+					isCheckedAll = false;						
+					break;
+				}
+			}
+			checkbox_All.checked = isCheckedAll;
+		}
+			
+	</script>
+</body>
+</html>

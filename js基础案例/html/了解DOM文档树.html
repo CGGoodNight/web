@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="box"></div>
+    <p>nodeName:"DIV"</p>
+    <p>nodeType:1</p>
+    <p>nodeValue:null</p>
+    <hr>
+    <p>nodeName:"id"</p>
+    <p>nodeType:2</p>
+    <p>nodeValue:"box"</p>
+    <script>
+        var box = document.getElementById('box');
+        console.dir(box);  //元素节点
+        // nodeName:"DIV"   标签的名称
+        // nodeType:1       节点的类型  1  元素节点
+        // nodeValue:null   当为元素节点时 始终是null
+
+        var attr = box.getAttributeNode('id');  //获取属性节点
+        console.dir(attr); //属性节点
+        // nodeName:"id"     属性的名称
+        // nodeType:2        节点的类型  2  属性节点
+        // nodeValue:"box"   属性的值
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body {
+        background-color: #eee;
+    }
+
+    .hd .current {
+        border-bottom: 2px solid blue;
+    }
+
+    .hd span {
+        display: inline-block;
+        width: 100px;
+        height: 30px;
+        background-color: #ddd;
+        text-align: center;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .bd {
+        margin-top: 5px;
+    }
+    .bd div {
+        width: 415px;
+        height: 415px;
+        background-color: #fff;
+        display: none;
+ 
+    }
+    .bd .current {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div id="hd" class="hd">
+            <span class="current">杨幂</span>
+            <span>刘亦菲</span>
+            <span>胡歌</span>
+            <span>刘诗诗</span>
+        </div>
+        <div class="bd" id="bd">
+            <div class="current"><img src="../image/杨幂.jpg" alt="" width="415px"></div>
+            <div><img src="../image/刘亦菲.jpg" alt="" width="415px"></div>
+            <div><img src="../image/胡歌.jpg" alt="" width="415px"></div>
+            <div><img src="../image/刘诗诗.jpg" alt="" width="415px"></div>
+        </div>
+    </div>
+
+    <script>
+        var spans = document.querySelectorAll('#hd span');
+        var i = 0 , len = spans.length;
+        for (;i < len;i++) {
+            var span = spans[i];
+             //建立一个索引 以记录第i个span显示第i个div
+            span.setAttribute('index', i);
+            span.onmouseover = function() {
+                //每次都需要取消所有的高亮
+                for (i = 0 ; i < len ; i++) {
+                    spans[i].className = '';
+                }
+                this.className = 'current';
+
+                var divs = document.querySelectorAll('#bd div');
+                var divLen = divs.length;
+                //得到索引
+                var index = parseInt(this.getAttribute('index'));
+                for (i = 0 ; i < divLen ; i++) {
+                    var div = divs[i];
+                    div.className = '';
+                }
+
+                divs[index].className = 'current';
+            }
+        }
+
+    </script>
+</body>
+</html>

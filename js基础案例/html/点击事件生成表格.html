@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #box table {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            text-align: center;
+            width: 500px;
+        }
+        #box table td {
+            height: 40px;
+        }
+        #box thead td {
+            background-color: lightgray;
+        }
+        #box td {
+            border: 1px solid #000;
+        }
+        #box td a {
+            text-decoration: none;
+            color: #000;
+        }
+        #box td a:hover {
+            color: #f10215;
+        }
+    </style>
+</head>
+<body>
+    <input type="button" value="一键生成表格" id="btn">
+    <div id="box"></div>
+    <script src="../js/common.js"></script>
+    <script src="../js/table.js"></script>
+
+    <script>
+        //表头数据
+        var headData = ['姓名','年龄','学历','操作'];
+        //表格数据
+        var bodyData = [ 
+            {
+            name: '小爱',age: '10',education: '本科'
+            },
+            {
+            name: '小美',age: '20',education: '本科'
+            },
+            {
+            name: '小港',age: '21',education: '本科'
+            },
+            {
+            name: '小林',age: '33',education: '研究生'
+            }
+        ];
+        
+        getId('btn').onclick = function() {
+            creatTable(box,headData,bodyData);
+        }
+    </script>
+</body>
+</html>
