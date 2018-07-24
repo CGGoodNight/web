@@ -1,0 +1,80 @@
+// .clearfix::before,
+// .clearfix::after {
+//     content: "";
+//     display: table;  /*触发BFC*/
+// }
+// .clearfix::after {
+//     clear: both;
+// }
+// .clearfix {
+//     zoom: 1;  /*解决IE6,7的兼容性*/
+// }
+
+.main {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.main li {
+    list-style: none;
+    height: 32px;
+    line-height: 32px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 0 45px;
+    border-radius: 3px;
+    border-left: 5px solid #629A9C;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07);
+}
+.main li input {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin: 3px 3px 3px 4px;
+}
+.main li a {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    width: 14px;
+    height: 12px;
+    border-radius: 14px;
+    border: 6px double #FFF;
+    background: #CCC;
+    line-height: 14px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.title {
+    margin: 20px 0;
+    position: relative;
+}
+
+.title span {
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    display: inline-block;
+    padding: 0 5px;
+    height: 20px;
+    border-radius: 20px;
+    background: #E6E6FA;
+    line-height: 22px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+.todoListDone {
+    border-left: 5px solid #999;
+    opacity: 0.5;
+}
