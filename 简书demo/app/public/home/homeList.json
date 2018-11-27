@@ -1,0 +1,82 @@
+{
+  "success": true,
+  
+  "topicList": [{
+    "id": 1,
+    "text": "故事",
+    "url": "//upload.jianshu.io/collections/images/95/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  },
+  {
+    "id": 2,
+    "text": "读书",
+    "url": "//upload.jianshu.io/collections/images/4/sy_20091020135145113016.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  },
+  {
+    "id": 3,
+    "text": "简书电影",
+    "url": "//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  },
+  {
+    "id": 4,
+    "text": "摄影",
+    "url": "//upload.jianshu.io/collections/images/83/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  },
+  {
+    "id": 5,
+    "text": "手绘",
+    "url": "//upload.jianshu.io/collections/images/283250/%E6%BC%AB%E7%94%BB%E4%B8%93%E9%A2%98.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  },
+  {
+    "id": 6,
+    "text": "旅行·在路上",
+    "url": "//upload.jianshu.io/collections/images/13/%E5%95%8A.png?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  },
+  {
+    "id": 7,
+    "text": "自然科普",
+    "url": "//upload.jianshu.io/collections/images/76/12.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64"
+  }
+  ],
+
+  "articleList": [{
+    "id": 1,
+    "title": "七律 遣怀",
+    "imgUrl": "",
+    "text": "叶圣陶先生说过：“写文章不是什么神秘的事儿，艰难的事儿。文章的材料是经验和意思，文章的依据是语言。只要会说话，再加上能识字会写文字，这就能够写文..."
+  },
+  {
+    "id": 2,
+    "title": "为什么要用Redis",
+    "imgUrl": "https://upload-images.jianshu.io/upload_images/7564501-3e01e5451d3e63f0?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "text": "最近阅读了《Redis开发与运维》，非常不错。 这里对书中的知识整理一下，方便自己回顾一下Redis的整个体系，来对相关知识点查漏补缺。 按照五..."
+  },
+  {
+    "id": 3,
+    "title": "这一次的瘦身，我认真地投资了288元和100%的行动",
+    "imgUrl": "https://upload-images.jianshu.io/upload_images/3706695-fa40f6e36d0c8463.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "text": "听过很多瘦身后逆袭的故事，也看过很多胖妞瘦身后逆袭的电视剧/电影，看过之后，拍拍自己的肚子，也会开始幻想。 “瘦身之后，我也会很漂亮的。” 这个..."
+  }
+  ],
+
+  "hotList": [{
+    "id": 1,
+    "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png"
+  },
+  {
+    "id": 2,
+    "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png"
+  },
+  {
+    "id": 3,
+    "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+  },
+  {
+    "id": 4,
+    "imgUrl": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png"
+  },
+  {
+    "id": 5,
+    "imgUrl": "//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+  }
+  ]
+}

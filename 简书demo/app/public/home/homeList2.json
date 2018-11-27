@@ -1,0 +1,22 @@
+{
+  "success": true,
+  "articleList": [{
+    "id": 4,
+    "title": "七律 遣怀",
+    "imgUrl": "",
+    "text": "叶圣陶先生说过：“写文章不是什么神秘的事儿，艰难的事儿。文章的材料是经验和意思，文章的依据是语言。只要会说话，再加上能识字会写文字，这就能够写文..."
+  },
+  {
+    "id": 5,
+    "title": "为什么要用Redis",
+    "imgUrl": "https://upload-images.jianshu.io/upload_images/7564501-3e01e5451d3e63f0?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "text": "最近阅读了《Redis开发与运维》，非常不错。 这里对书中的知识整理一下，方便自己回顾一下Redis的整个体系，来对相关知识点查漏补缺。 按照五..."
+  },
+  {
+    "id": 6,
+    "title": "这一次的瘦身，我认真地投资了288元和100%的行动",
+    "imgUrl": "https://upload-images.jianshu.io/upload_images/3706695-fa40f6e36d0c8463.jpeg?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/240",
+    "text": "听过很多瘦身后逆袭的故事，也看过很多胖妞瘦身后逆袭的电视剧/电影，看过之后，拍拍自己的肚子，也会开始幻想。 “瘦身之后，我也会很漂亮的。” 这个..."
+  }
+  ]
+}
