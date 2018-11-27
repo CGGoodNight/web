@@ -1,6 +1,6 @@
 ## Memos
 
-> 技术架构：本备忘录使用react+react-router+redux+less+ES6+webpack实现;
+> 技术架构：本备忘录使用react+react-router+redux+styled-component+ES6+webpack实现;
 
 >页面UI参照：
 
