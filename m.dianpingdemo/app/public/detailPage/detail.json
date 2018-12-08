@@ -1,0 +1,14 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "title": "一只酸牛奶",
+      "star": 4,
+      "appendTitle": "很好吃的酸奶",
+      "time": "营业时间 11:00 - 21:00 <br />电话订购 18323430332 <br />网络订购 11:00 - 19:00",
+      "imgUrl": "static/images/suannainiu",
+      "price": "￥88"
+    }
+  ]
+}

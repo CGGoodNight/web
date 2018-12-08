@@ -1,0 +1,96 @@
+{
+  "success": true,
+  "homeheaderLike": [
+    {
+      "id": 1,
+      "title": "一只酸奶牛",
+      "title_more": "[92店通用] 低至9.0折酸奶水果优格2选1",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/suannainiu",
+      "truePic": "10.8",
+      "outPic": "12",
+      "sale": 24625
+    },
+    {
+      "id": 2,
+      "title": "紫燕百味鸡",
+      "title_more": "[138店通用] 低至9.0折代金券1张",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/baiweiji",
+      "truePic": "18",
+      "outPic": "20",
+      "sale": 4528
+    },
+    {
+      "id": 3,
+      "title": "私幕影吧",
+      "title_more": "[4店通用] 低至2.7折小包2人夜间观影场",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/yingba",
+      "truePic": "34",
+      "outPic": "128",
+      "sale": 5030
+    },
+    {
+      "id": 4,
+      "title": "无忧留香排骨",
+      "title_more": "[3店通用] 低至7.5折特色留香排骨大份1份 ",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/paigu",
+      "truePic": "14.9",
+      "outPic": "20",
+      "sale": 17402
+    },
+    {
+      "id": 5,
+      "title": "林妹妹沾水米线",
+      "title_more": "[3店通用] 低至9.3折豪华沾水米线1份 ",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/mixian",
+      "truePic": "15.8",
+      "outPic": "17",
+      "sale": 20749
+    },
+    {
+      "id": 6,
+      "title": "怀粮生煎",
+      "title_more": "[解放碑] 低至6.7折生煎包2选1 ",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/shengjian",
+      "truePic": "4",
+      "outPic": "6",
+      "sale": 1568
+    },
+    {
+      "id": 7,
+      "title": "唐糕祖",
+      "title_more": "[9店通用] 低至5.4折招牌糕点6选1",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/tgz",
+      "truePic": "12.8",
+      "outPic": "23.7",
+      "sale": 4336
+    },
+    {
+      "id": 8,
+      "title": "四云奶盖贡茶",
+      "title_more": "[5店通用] 低至7.5折新品10选1",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/naicha",
+      "truePic": "15.8",
+      "outPic": "18",
+      "sale": 4648
+    },
+    {
+      "id": 9,
+      "title": "怀粮生煎",
+      "title_more": "[解放碑] 低至7.6折大师黑砖奶茶1份",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "static/images/zhucha",
+      "truePic": "6.8",
+      "outPic": "9",
+      "sale": 2556
+    }
+    
+  ]
+}

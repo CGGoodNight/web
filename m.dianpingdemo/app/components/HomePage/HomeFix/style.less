@@ -1,0 +1,56 @@
+.scroll-pane {
+  width: 100%;
+}
+
+.circles {
+  text-align: center;
+}
+.circles li {
+  display: inline-block;
+  margin-right: 3px;
+  background-color: #ccc;
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+}
+.circles .on {
+  background-color: #f5734b;
+}
+
+.scroll-box {
+  height: 30vh;
+}
+.scroll-box .scroll-container {
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.scroll-box .scroll-container .scroll-item {
+  align-self: center;
+  width: 100%;
+}
+
+.scroll-box .scroll-container span {
+  width: 100%;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.scroll-box img {
+  width: 44px;
+  height: 44px;
+  transform: translateY(-15%);
+}
+.scroll-box a {
+  position: relative;
+  margin: 2vh 0;
+  width: 20%;
+  padding: 13px 0 0;
+  display: block;
+  float: left;
+  color: #333;
+  box-sizing: border-box;
+  font-size: 13px;
+  text-align: center;
+}

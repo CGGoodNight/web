@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "homeheaderList": [
+    {
+      "id": 1,
+      "title": "汉堡王",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "../../../../static/images/hanbao.jpg",
+      "truePic": "9",
+      "outPic": "13.5"
+    },
+    {
+      "id": 2,
+      "title": "小确茶",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "../../../../static/images/xiaoquecha.jpg",
+      "truePic": "8.8",
+      "outPic": "14"
+    },
+    {
+      "id": 3,
+      "title": "乡村基",
+      "link": "https://github.com/CGGoodNight",
+      "imgUrl": "../../../../static/images/xiangcunji.jpg",
+      "truePic": "1.9",
+      "outPic": "5"
+    }
+  ]
+}
